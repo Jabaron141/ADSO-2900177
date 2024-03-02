@@ -30,7 +30,7 @@ El formato Markdown utiliza ciertos caracteres para dar formato al texto. A cont
 
 - **Enlaces:** Utiliza `[Texto del enlace](URL)` para crear un enlace. Por ejemplo, `[Google](https://www.google.com)`.
 
-- **Imágenes:** Utiliza `![Texto alternativo](URL de la imagen)` para insertar una imagen. Por ejemplo, `![IMAGEN](https://IMAGEN.com/favicon.ico)`.
+- **Imágenes:** Utiliza `![Texto alternativo](URL de la imagen)` para insertar una imagen. Por ejemplo, `![Fondo](imagenes/fondo-pantalla-luna-arte-digital_23-2150918875.avif)`.
 
 ## Ejemplo de archivo .md
 
@@ -53,8 +53,9 @@ Este es un archivo de Markdown de ejemplo.
 
 [Google](https://www.google.com)
 
-![IMAGEN](https://IMAGEN.com/favicon.ico)
+![Fondo](imagenes/fondo-pantalla-luna-arte-digital_23-2150918875.avif)
 ```
+![Fondo](imagenes/fondo-pantalla-luna-arte-digital_23-2150918875.avif)
 
 ## Guardar y visualizar el archivo
 

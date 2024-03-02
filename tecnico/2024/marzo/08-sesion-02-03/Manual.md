@@ -52,6 +52,7 @@ Este es un archivo de Markdown de ejemplo.
 ## Enlaces e imágenes
 
 [Google](https://www.google.com)
+
 ![IMAGEN](https://IMAGEN.com/favicon.ico)
 ```
 

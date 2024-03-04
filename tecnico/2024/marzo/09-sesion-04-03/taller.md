@@ -39,7 +39,7 @@ FIN
 
 ### **Python**
 
-``py``
+```
 p1 = float(input("Por favor ingrese la inversión de la persona 1: "))
 p2 = float(input("Por favor ingrese la inversión de la persona 2: "))
 p3 = float(input("Por favor ingrese la inversión de la persona 3: "))
@@ -53,7 +53,7 @@ print("La inversión total fue de ",totl,"$")
 print("El porcentaje de inversión de la persona 1 es de ",por1,"%")
 print("El porcentaje de inversión de la persona 2 es de ",por2,"%")
 print("El porcentaje de inversión de la persona 3 es de ",por3,"%")
-``py``
+```
 
 ## 2) Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:
 
@@ -130,7 +130,7 @@ FIN
 
 ### **Python**
 
-``py``
+```
 exm = float(input("Ingrese el puntaje obtenido en el examen de matemáticas: "))
 tm1 = float(input("Ingrese el puntaje obtenido en la tarea 1 de matemáticas: "))
 tm2 = float(input("Ingrese el puntaje obtenido en la tarea 2 de matemáticas: "))
@@ -155,7 +155,7 @@ print("El promedio de matemáticas es de ",prom)
 print("El promedio de física es de ",prof)
 print("El promedio de química es de ",proq)
 print("El promedio total de las 3 materias es de ",pro)
-``py``
+```
 
 ## 3) Leer un real e imprimir si el número es positivo o negativo.
 
@@ -182,14 +182,14 @@ FIN
 
 ### **Python**
 
-``py``
+```
 num = float(input("Digite el número que desee: "))
 
 if(num<0):
  print("El número digitado es negativo")
 else:
  print("El número digitado es positivo")
-``py``
+```
 
 ## 4) Leer un real e imprimir si el número es mayor a 200 o no.
 
@@ -216,14 +216,14 @@ FIN
 
 ### **Python**
 
-``py``
+```
 num = float(input("Digite el número que desee: "))
 
 if(num>200):
  print("El número digitado es mayor que 200")
 else:
  print("El número digitado es menor que 200")
-``py``
+```
 
 ## 5) Leer un real e imprimir si el número está en el rango de 50 y 100.
 
@@ -250,11 +250,11 @@ FIN
 
 ### **Python**
 
-``py``
+```
 num = float(input("Digite el número que desee: "))
 
 if(50<num<100):
  print("El número digitado está en el rango de 50 y 100")
 else:
  print("El número digitado no está en el rango de 50 y 100")
-``py``
+```

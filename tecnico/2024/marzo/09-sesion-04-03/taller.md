@@ -1,6 +1,6 @@
 ## TALLER
 
-* 1) Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.
+1) Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.
 
 ### **Pseudocodigo**
 
@@ -55,7 +55,7 @@ print("El porcentaje de inversión de la persona 2 es de ",por2,"%")
 print("El porcentaje de inversión de la persona 3 es de ",por3,"%")
 ``py``
 
-* 2) Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:
+2) Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:
 
     - La calificación de Matemáticas se obtiene de la siguiente manera: Examen 90% Promedio de tareas 10% En esta materia se pidió un total de tres tareas.
 
@@ -157,7 +157,7 @@ print("El promedio de química es de ",proq)
 print("El promedio total de las 3 materias es de ",pro)
 ``py``
 
-* 3) Leer un real e imprimir si el número es positivo o negativo.
+3) Leer un real e imprimir si el número es positivo o negativo.
 
 ### **Pseudocodigo**
 
@@ -191,7 +191,7 @@ else:
  print("El número digitado es positivo")
 ``py``
 
-* 4) Leer un real e imprimir si el número es mayor a 200 o no.
+4) Leer un real e imprimir si el número es mayor a 200 o no.
 
 ### **Pseudocodigo**
 
@@ -225,7 +225,7 @@ else:
  print("El número digitado es menor que 200")
 ``py``
 
-* 5) Leer un real e imprimir si el número está en el rango de 50 y 100.
+5) Leer un real e imprimir si el número está en el rango de 50 y 100.
 
 ### **Pseudocodigo**
 

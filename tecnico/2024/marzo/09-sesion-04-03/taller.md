@@ -39,7 +39,7 @@ FIN
 
 ### **Python**
 
-```python
+```py
 p1 = float(input("Por favor ingrese la inversión de la persona 1: "))
 p2 = float(input("Por favor ingrese la inversión de la persona 2: "))
 p3 = float(input("Por favor ingrese la inversión de la persona 3: "))

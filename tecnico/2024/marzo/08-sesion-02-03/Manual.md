@@ -62,5 +62,3 @@ Este es un archivo de Markdown de ejemplo.
 1. **Guardar el archivo:** Una vez que hayas terminado de editar tu archivo `.md`, guarda los cambios.
 
 2. **Visualizar el archivo:** Abre el archivo `.md` en un visor de Markdown. Puedes utilizar aplicaciones en línea como Dillinger, StackEdit, o GitHub para visualizar el archivo con el formato correcto.
-
-![text](imagenes/fondo-pantalla-luna-arte-digital_23-2150918875.avif)

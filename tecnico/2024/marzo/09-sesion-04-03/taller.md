@@ -39,7 +39,7 @@ FIN
 
 ### **Python**
 
-```py
+```python
 p1 = float(input("Por favor ingrese la inversión de la persona 1: "))
 p2 = float(input("Por favor ingrese la inversión de la persona 2: "))
 p3 = float(input("Por favor ingrese la inversión de la persona 3: "))
@@ -130,7 +130,7 @@ FIN
 
 ### **Python**
 
-```py
+```python
 exm = float(input("Ingrese el puntaje obtenido en el examen de matemáticas: "))
 tm1 = float(input("Ingrese el puntaje obtenido en la tarea 1 de matemáticas: "))
 tm2 = float(input("Ingrese el puntaje obtenido en la tarea 2 de matemáticas: "))
@@ -182,7 +182,7 @@ FIN
 
 ### **Python**
 
-```py
+```python
 num = float(input("Digite el número que desee: "))
 
 if(num<0):
@@ -216,7 +216,7 @@ FIN
 
 ### **Python**
 
-```py
+```python
 num = float(input("Digite el número que desee: "))
 
 if(num>200):
@@ -250,7 +250,7 @@ FIN
 
 ### **Python**
 
-```py
+```python
 num = float(input("Digite el número que desee: "))
 
 if(50<num<100):

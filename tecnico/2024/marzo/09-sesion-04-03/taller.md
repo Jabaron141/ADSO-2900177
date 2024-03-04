@@ -186,9 +186,9 @@ FIN
 num = float(input("Digite el número que desee: "))
 
 if(num<0):
- print("El número digitado es negativo")
+  print("El número digitado es negativo")
 else:
- print("El número digitado es positivo")
+  print("El número digitado es positivo")
 ```
 
 ## 4) Leer un real e imprimir si el número es mayor a 200 o no.
@@ -220,9 +220,9 @@ FIN
 num = float(input("Digite el número que desee: "))
 
 if(num>200):
- print("El número digitado es mayor que 200")
+  print("El número digitado es mayor que 200")
 else:
- print("El número digitado es menor que 200")
+  print("El número digitado es menor que 200")
 ```
 
 ## 5) Leer un real e imprimir si el número está en el rango de 50 y 100.
@@ -254,7 +254,7 @@ FIN
 num = float(input("Digite el número que desee: "))
 
 if(50<num<100):
- print("El número digitado está en el rango de 50 y 100")
+  print("El número digitado está en el rango de 50 y 100")
 else:
- print("El número digitado no está en el rango de 50 y 100")
+  print("El número digitado no está en el rango de 50 y 100")
 ```

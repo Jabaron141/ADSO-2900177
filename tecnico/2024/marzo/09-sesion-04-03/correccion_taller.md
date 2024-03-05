@@ -20,29 +20,29 @@ INICIO
   Escribir "Por favor ingrese la inversión de la persona 1"
   Leer p1
   Si (p1>=0)
-    Escribir "Por favor ingrese la inversión de la persona 2"
-    Leer p2
-    Si(p2>=0)
-      Escribir "Por favor ingrese la inversión de la persona 3"
-      Leer p3
-      Si(p3>=0)
-        totl = p1+p2+p3
-        por1 = (p1/totl)*100
-        por2 = (p2/totl)*100
-        por3 = (p3/totl)*100
+      Escribir "Por favor ingrese la inversión de la persona 2"
+      Leer p2
+      Si(p2>=0)
+        Escribir "Por favor ingrese la inversión de la persona 3"
+        Leer p3
+        Si(p3>=0)
+          totl = p1+p2+p3
+          por1 = (p1/totl)*100
+          por2 = (p2/totl)*100
+          por3 = (p3/totl)*100
 
-        Escribir "La inversión total fue de ",totl,"$"
-        Escribir " El porcentaje de inversión de la persona 1 es de ",por1,"%"
-        Escribir " El porcentaje de inversión de la persona 2 es de ",por2,"%"
-        Escribir " El porcentaje de inversión de la persona 3 es de ",por3,"%"
+          Escribir "La inversión total fue de ",totl,"$"
+          Escribir " El porcentaje de inversión de la persona 1 es de ",por1,"%"
+          Escribir " El porcentaje de inversión de la persona 2 es de ",por2,"%"
+          Escribir " El porcentaje de inversión de la persona 3 es de ",por3,"%"
+        Sino
+          Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+        Finsi
       Sino
         Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
       Finsi
     Sino
       Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
-    Finsi
-  Sino
-    Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
   Finsi
 FIN
 ```
@@ -109,81 +109,81 @@ INICIO
 
   Escribir "Ingrese el puntaje obtenido en el examen de matemáticas"
   Leer exm
-  Si
-    Escribir "Ingrese el puntaje obtenido en la tarea 1 de matemáticas"
-    Leer tm1
-    Si
-      Escribir "Ingrese el puntaje obtenido en la tarea 2 de matemáticas"
-      Leer tm2
-      Si
-        Escribir "Ingrese el puntaje obtenido en la tarea 3 de matemáticas"
-        Leer tm3
-        Si
-          Escribir "Ingrese el puntaje obtenido en el examen de física"
-          Leer exf
-          Si
-            Escribir "Ingrese el puntaje obtenido en la tarea 1 de física"
-            Leer tf1
-            Si
-              Escribir "Ingrese el puntaje obtenido en la tarea 2 de física"
-              Leer tf2
-              Si
-                Escribir "Ingrese el puntaje obtenido en el examen de químicia"
-                Leer exq
-                Si
-                  Escribir "Ingrese el puntaje obtenido en la tarea 1 de química"
-                  Leer tq1
-                  Si
-                    Escribir "Ingrese el puntaje obtenido en la tarea 2 de química"
-                    Leer tq2
-                    Si
-                      Escribir "Ingrese el puntaje obtenido en la tarea 3 de química"
-                      Leer tq3
-                      Si
-                        protm = (tm1+tm2+tm3)/3
-                        prom = (exm*0.9)+(protm*0.1)
-                        protf = (tf1+tf2)/2
-                        prof = (exf*0.8)+(protf*0.2)
-                        protq = (tq1+tq2+tq3)/3
-                        proq = (exq*0.85)+(protq*0.15)
-                        pro = (prom+prof+proq)/3
+  Si (exm>=0)
+      Escribir "Ingrese el puntaje obtenido en la tarea 1 de matemáticas"
+      Leer tm1
+      Si (tm1>=0)
+          Escribir "Ingrese el puntaje obtenido en la tarea 2 de matemáticas"
+          Leer tm2
+          Si (tm2>=0)
+              Escribir "Ingrese el puntaje obtenido en la tarea 3 de matemáticas"
+              Leer tm3
+              Si (tm3>=0)
+                  Escribir "Ingrese el puntaje obtenido en el examen de física"
+                  Leer exf
+                  Si (exf>=0)
+                      Escribir "Ingrese el puntaje obtenido en la tarea 1 de física"
+                      Leer tf1
+                      Si (tf1>=0)
+                          Escribir "Ingrese el puntaje obtenido en la tarea 2 de física"
+                          Leer tf2
+                          Si (tf2>=0)
+                              Escribir "Ingrese el puntaje obtenido en el examen de químicia"
+                              Leer exq
+                              Si (exq>=0)
+                                  Escribir "Ingrese el puntaje obtenido en la tarea 1 de química"
+                                  Leer tq1
+                                  Si (tq1>=0)
+                                      Escribir "Ingrese el puntaje obtenido en la tarea 2 de química"
+                                      Leer tq2
+                                      Si (tq2>=0)
+                                          Escribir "Ingrese el puntaje obtenido en la tarea 3 de química"
+                                          Leer tq3
+                                          Si (tq3>=0)
+                                              protm = (tm1+tm2+tm3)/3
+                                              prom = (exm*0.9)+(protm*0.1)
+                                              protf = (tf1+tf2)/2
+                                              prof = (exf*0.8)+(protf*0.2)
+                                              protq = (tq1+tq2+tq3)/3
+                                              proq = (exq*0.85)+(protq*0.15)
+                                              pro = (prom+prof+proq)/3
 
-                        Escribir "El promedio de matemáticas es de ",prom
-                        Escribir "El promedio de física es de ",prof
-                        Escribir "El promedio de química es de ",proq
-                        Escribir "El promedio total de las 3 materias es de ",pro
+                                              Escribir "El promedio de matemáticas es de ",prom
+                                              Escribir "El promedio de física es de ",prof
+                                              Escribir "El promedio de química es de ",proq
+                                              Escribir "El promedio total de las 3 materias es de ",pro
+                                          Sino
+                                              Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+                                          Finsi
+                                      Sino
+                                          Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+                                      Finsi
+                                  Sino
+                                      Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+                                  Finsi
+                              Sino
+                                  Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+                              Finsi
+                          Sino
+                              Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+                          Finsi
                       Sino
-                        Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+                          Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
                       Finsi
-                    Sino
-                      Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
-                    Finsi
                   Sino
-                    Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+                      Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
                   Finsi
-                Sino
-                  Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
-                Finsi
               Sino
-                Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+                  Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
               Finsi
-            Sino
-              Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
-            Finsi
           Sino
-            Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+              Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
           Finsi
-        Sino
-          Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
-        Finsi
       Sino
-        Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+          Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
       Finsi
-    Sino
-      Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
-    Finsi
   Sino
-    Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
+      Escribir "Ingresó un valor erroneo, por favor intentelo de nuevo"
   Finsi
 
 FIN

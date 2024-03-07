@@ -19,13 +19,13 @@ INICIO
 
   Escribir "Por favor ingrese la inversión de la persona 1"
   Leer p1
-  Si (p1>=0)
+  Si (p1>=0) Entonces
       Escribir "Por favor ingrese la inversión de la persona 2"
       Leer p2
-      Si(p2>=0)
+      Si(p2>=0) Entonces
           Escribir "Por favor ingrese la inversión de la persona 3"
           Leer p3
-          Si(p3>=0)
+          Si(p3>=0) Entonces
               totl = p1+p2+p3
               por1 = (p1/totl)*100
               por2 = (p2/totl)*100
@@ -109,37 +109,37 @@ INICIO
 
   Escribir "Ingrese el puntaje obtenido en el examen de matemáticas"
   Leer exm
-  Si (exm>=0)
+  Si (exm>=0) Entonces
       Escribir "Ingrese el puntaje obtenido en la tarea 1 de matemáticas"
       Leer tm1
-      Si (tm1>=0)
+      Si (tm1>=0) Entonces
           Escribir "Ingrese el puntaje obtenido en la tarea 2 de matemáticas"
           Leer tm2
-          Si (tm2>=0)
+          Si (tm2>=0) Entonces
               Escribir "Ingrese el puntaje obtenido en la tarea 3 de matemáticas"
               Leer tm3
-              Si (tm3>=0)
+              Si (tm3>=0) Entonces
                   Escribir "Ingrese el puntaje obtenido en el examen de física"
                   Leer exf
-                  Si (exf>=0)
+                  Si (exf>=0) Entonces
                       Escribir "Ingrese el puntaje obtenido en la tarea 1 de física"
                       Leer tf1
-                      Si (tf1>=0)
+                      Si (tf1>=0) Entnces
                           Escribir "Ingrese el puntaje obtenido en la tarea 2 de física"
                           Leer tf2
-                          Si (tf2>=0)
+                          Si (tf2>=0) Entonces
                               Escribir "Ingrese el puntaje obtenido en el examen de químicia"
                               Leer exq
-                              Si (exq>=0)
+                              Si (exq>=0) Entonces
                                   Escribir "Ingrese el puntaje obtenido en la tarea 1 de química"
                                   Leer tq1
-                                  Si (tq1>=0)
+                                  Si (tq1>=0) Entonces
                                       Escribir "Ingrese el puntaje obtenido en la tarea 2 de química"
                                       Leer tq2
-                                      Si (tq2>=0)
+                                      Si (tq2>=0) Entonces
                                           Escribir "Ingrese el puntaje obtenido en la tarea 3 de química"
                                           Leer tq3
-                                          Si (tq3>=0)
+                                          Si (tq3>=0) Entonces
                                               protm = (tm1+tm2+tm3)/3
                                               prom = (exm*0.9)+(protm*0.1)
                                               protf = (tf1+tf2)/2
@@ -264,7 +264,7 @@ INICIO
   Escribir "Digite el número que desee"
   Leer num
 
-  Si (num<0):
+  Si (num<0) Entonces:
       Escribir "El número digitado es negativo"
   Sino:
       Escribir "El número digitado es positivo"
@@ -298,7 +298,7 @@ INICIO
   Escribir "Digite el número que desee"
   Leer num
 
-  Si (num>200):
+  Si (num>200) Entonces:
       Escribir "El número digitado es mayor que 200"
   Sino:
       Escribir "El número digitado es menor que 200"
@@ -332,7 +332,7 @@ INICIO
   Escribir "Digite el número que desee"
   Leer num
 
-  Si (50<num<100):
+  Si (50<num<100) Entonces:
       Escribir "El número digitado está en el rango de 50 y 100"
   Sino:
       Escribir "El número digitado no está en el rango de 50 y 100"

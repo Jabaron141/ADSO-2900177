@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = prompt("Digite el valor del primer numero",0);
+        let num2 = prompt("Digite el valor del primer numero",0);
+
+        console.log("El contenido de un prompt es del tipo: " + typeof(num1));
+
+        let suma = parseFloat(num1) + parseFloat(num2);
+
+        num1 = (num1=="")?"0":num1;
+        num2 = (num2=="")?"0":num2;
+
+        console.log("La suma de " + num1 + "+" + num2 + " es " + suma + "\n");
+        console.log("Suma: " + suma + "\n");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = prompt("Digite el número de tablas de multiplicar que desea hacer");
+        let num2 = prompt("Digite hasta que numero desea multiplicar las tablas de multiplicar")
+        let res = 0;
+        let con1 = 0;
+        let con2 = 0;
+        let par = 0;
+        let imp = 0;
+
+        while (con1<num1) {
+            let con2 = 0;
+            con1 = con1 + 1;
+            console.log("TABLA DEL "+con1)
+            while (con2<num2) {
+                con2 = con2 + 1;
+                res = con1 * con2;
+                console.log(con1+" x "+con2+" = "+res);
+                if (res % 2 == 0) {
+                    par = par + 1;
+                    console.log("buzz");
+                }
+                else{
+                    imp = imp + 1;
+                    console.log("bass");
+                }
+            }
+            console.log("");
+        }
+        console.log("Hay "+par+" resultados pares");
+        console.log("Hay "+imp+" resultados impares");
+    </script>
+</body>
+
+</html>

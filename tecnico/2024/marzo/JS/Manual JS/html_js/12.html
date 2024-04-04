@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let l1 = prompt("Digite el valor del lado del primer cuadrado");
+        let l2 = prompt("Digite el valor del lado del segundo cuadrado");
+        let l3 = prompt("Digite el valor del lado del tercer cuadrado");
+
+        let cu1 = l1*l1;
+        let cu2 = l2*l2;
+        let cu3 = l3*l3;
+
+        if (cu1==cu2 && cu1==cu3 && cu2==cu3) {
+            console.log("los 3 cuadrados tienen la misma area");
+        }
+        else{
+            if (cu1>cu2 && cu1>cu3) {
+                console.log("el primer cuadrado con un lado de "+l1+" unidades y un area de "+cu1+" es el mayor de los 3 cuadrados");
+            }
+            else{
+                if (cu2>cu1 && cu2>cu3) {
+                    console.log("el segundo cuadrado con un lado de "+l2+" unidades y un area de "+cu2+" es el mayor de los 3 cuadrados");
+                }
+                else{
+                    console.log("el tercer cuadrado con un lado de "+l3+" unidades y un area de "+cu3+" es el mayor de los 3 cuadrados");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
  * Operaciones aritméticas aplicando funciones como una expresión
  * Autor: Jorge Baron Corredor
  * Fecha: Lunes 01 de abril de 2024
- */
+*/
 
 let numUno;
 let numDos;

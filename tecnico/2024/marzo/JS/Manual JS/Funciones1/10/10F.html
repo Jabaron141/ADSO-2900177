@@ -10,7 +10,12 @@
     <script>
         let fecNa = parseInt(prompt("Digite su año de nacimiento"));
 
-        ed(fecNa);
+        if (ed(fecNa)>17){
+            console.log("Usted tiene " + ed(fecNa) + " años y es mayor de edad")
+        }
+        else{
+            console.log("Usted tiene " + ed(fecNa) + " años y es menor de edad")
+        }
     </script>
 </body>
 </html>

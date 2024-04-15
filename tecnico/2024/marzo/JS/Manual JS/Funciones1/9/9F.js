@@ -4,20 +4,19 @@
  * Fecha: Lunes 01 de abril de 2024
 */
 
-function may(pnum1, pnum2) {
-    let num1 = pnum1;
-    let num2 = pnum2;
-    let res;
+function may(pnum1,pnum2){
+    let num1 = pnum1
+    let num2 = pnum2
     if(num1 == num2){
-        console.log(num1 + " y " + num2 + " son iguales");
+        return "los valores ingresados son iguales";
     }
     else{
         if(num1 > num2){
-            console.log(num1 + " es mayor que " + num2);
+            return num1;
         }
         else{
-            console.log(num2 + " es mayor que " + num1);
+            return num2;
         }
     }
-    return res;
+    
 }

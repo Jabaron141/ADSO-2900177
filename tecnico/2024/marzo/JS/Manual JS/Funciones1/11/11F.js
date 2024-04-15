@@ -8,9 +8,8 @@ function may(pnum1, pnum2, pnum3) {
     let num1 = pnum1;
     let num2 = pnum2;
     let num3 = pnum3;
-    let res;
     if (parseFloat(num1)==parseFloat(num2) && parseFloat(num1)==parseFloat(num3) && parseFloat(num2)==parseFloat(num3)) {
-        console.log("los 3 números digitados son iguales");
+        return "los 3 números digitados son iguales";
     }
     else{
         if (parseFloat(num1)>parseFloat(num2) && parseFloat(num1)>parseFloat(num3)) {
@@ -25,5 +24,4 @@ function may(pnum1, pnum2, pnum3) {
             }
         }
     }
-    return res;
 }

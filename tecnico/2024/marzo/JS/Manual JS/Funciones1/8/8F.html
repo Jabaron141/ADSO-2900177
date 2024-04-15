@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="c:\Users\natal\OneDrive\Escritorio\ADSO-2900177\tecnico\2024\marzo\JS\Manual JS\Funciones\8\8F.js"></script>
+</head>
+<body>
+    <script>
+        let valDia = parseFloat(prompt("Digite el valor del dia"));
+        let diaTra = parseFloat(prompt("Digite la cantidad de dias trabajados"));
+
+        console.log("El descuento de salud es " + sal(sue(valDia,diaTra)) + "$");
+        console.log("El descuento de pension es " + pen(sue(valDia,diaTra)) + "$");
+        console.log("El descuento de la arl es " + arl(sue(valDia,diaTra)) + "$");
+        console.log("El sueldo sin descuento es de " + sue(valDia,diaTra) + "$");
+        console.log("El sueldo total es de " + tot(sue(valDia,diaTra),des(sal(sue(valDia,diaTra)),pen(sue(valDia,diaTra)),arl(sue(valDia,diaTra)))) + "$");
+    </script>
+</body>
+</html>

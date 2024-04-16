@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="c:\Users\natal\OneDrive\Escritorio\ADSO-2900177\tecnico\2024\marzo\JS\Manual JS\Funciones\15\15F.js"></script>
+    <script src="c:\Users\SENA\Desktop\ADSO-2900177\tecnico\2024\marzo\JS\Manual JS\Funciones1\15\15F.js"></script>
 </head>
 <body>
     <script>
-        let not1 = parseFloat(prompt("Digite el valor de la primer nota"));
-        let not2 = parseFloat(prompt("Digite el valor de la segunda nota"));
-        let not3 = parseFloat(prompt("Digite el valor de la tercer nota"));
+        let not1 = parseFloat(prompt("Por favor ingrese la primera nota"));
+        let pornot1 = parseFloat(prompt("Por favor ingrese el porcentaje que corresponde a la primera nota (ejemplo: 20)"));
+        let not2 = parseFloat(prompt("Por favor ingrese la segunda nota"));
+        let pornot2 = parseFloat(prompt("Por favor ingrese el porcentaje que corresponde a la segunda nota (ejemplo: 30)"));
+        let not3 = parseFloat(prompt("Por favor ingrese la tercera nota"));
+        let pornot3 = parseFloat(prompt("Por favor ingrese el porcentaje que corresponde a la tercera nota (ejemplo: 50)"));
 
-        not(not1,not2,not3);
+        let p1 = pornot1/100;
+        let p2 = pornot2/100;
+        let p3 = pornot3/100;
+
+        
+        console.log("La nota 1 es "+not1+" la cual tiene un porcentaje de "+pornot1+"%")
+        console.log("La nota 2 es "+not2+" la cual tiene un porcentaje de "+pornot2+"%")
+        console.log("La nota 3 es "+not3+" la cual tiene un porcentaje de "+pornot3+"%")
+        console.log("Su nota final es de "+suma(pornot(not1,p1),pornot(not2,p2),pornot(not3,p3)))
+        console.log(may(suma(pornot(not1,p1),pornot(not2,p2),pornot(not3,p3))))
     </script>
 </body>
 </html>

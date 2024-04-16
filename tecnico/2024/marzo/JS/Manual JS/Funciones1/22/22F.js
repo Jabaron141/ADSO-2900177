@@ -6,12 +6,11 @@
 
 function mult(pnum){
     let num = pnum;
-    let res = 0;
-    let re;
-
-    for (let con = 1; con <= 10; con++) {
-        res = parseFloat(num)*parseInt(con);
-        console.log(num+" x "+con+" = "+res);
+    let multi  = 0;
+    let res = "";
+    for(let con = 1; con <= 10; con++){
+        res = num * con;
+        multi += num+" x "+con+" = "+res+"\n";
     }
-    return re;
+    return multi;
 }

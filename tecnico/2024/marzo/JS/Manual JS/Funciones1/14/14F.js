@@ -62,10 +62,10 @@ function subTra(psue){
 }
 
 function rete(psue){
-    let sue= psue;
-    let ret= 0;
+    let sue = psue;
+    let ret = 0;
     if(sue>(4*1300000)){
-        ret=sue*0.04;
+        ret = sue*0.04;
     }
     return ret;
 }

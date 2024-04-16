@@ -7,6 +7,7 @@
 function ed(pfecNa) {
     let fecNa = pfecNa;
     let fecAc = 2024;
-    let eda = parseInt(fecAc) - parseInt(fecNa);
+    let eda;
+    eda = parseInt(fecAc) - parseInt(fecNa);
     return eda;
 }

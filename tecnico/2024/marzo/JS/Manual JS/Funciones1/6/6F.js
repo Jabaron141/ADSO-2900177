@@ -13,10 +13,10 @@ function pornot(pnot, pporc) {
 }
 
 function suma(pnumUno, pnumDos, pnumTre) {
+    let numUno = pnumUno;
+    let numDos = pnumDos;
+    let numTre = pnumTre;
     let sumar;
-    numUno = pnumUno;
-    numDos = pnumDos;
-    numTre = pnumTre;
     sumar = numUno + numDos + numTre;
     return sumar
 }

@@ -4,41 +4,29 @@
  * Fecha: Lunes 01 de abril de 2024
 */
 
-function ed(pfecNa1, pfecNa2, pfecNa3){
-    let fecNa1 = pfecNa1;
-    let fecNa2 = pfecNa2;
-    let fecNa3 = pfecNa3;
+function eda(pfecNa){
+    let fecNa = pfecNa;
     let fecAc = 2024;
-    let eda1 = fecAc - fecNa1;
-    let eda2 = fecAc - fecNa2;
-    let eda3 = fecAc - fecNa3;
-    let pro = (eda1+eda2+eda3)/3;
-    let res;
+    let edad;
+    edad = fecAc - fecNa;
+    return edad;
+}
 
-    if (eda1>17) {
-        console.log("la primera persona con una edad de "+eda1+" es mayor de edad");
-    }
-    else{
-        console.log("la primera persona con una edad de "+eda1+" es menor de edad");
-    }
-    if (eda2>17) {
-        console.log("la segunda persona con una edad de "+eda2+" es mayor de edad");
-    }
-    else{
-        console.log("la segunda persona con una edad de "+eda2+" es menor de edad");
-    }
-    if (eda3>17) {
-        console.log("la tercera persona con una edad de "+eda3+" es mayor de edad");
-    }
-    else{
-        console.log("la tercera persona con una edad de "+eda3+" es menor de edad");
-    }
-    if (pro>17) {
-        console.log("el promedio de las 3 edades no supera la mayoria de edad");
-    }
-    else{
-        console.log("el promedio de las 3 edades supera la mayoria de edad");
-    }
+function pro(peda1, peda2, peda3){
+    let eda1 = peda1;
+    let eda2 = peda2;
+    let eda3 = peda3;
+    let prom;
+    prom = (eda1+eda2+eda3)/3;
+    return prom;
+}
 
-    return res; 
+function may(ped){
+    let ed = ped;
+    if (parseInt(ed)>17) {
+        return "es mayor de edad";
+    }
+    else{
+        return "es menor de edad";
+    }
 }

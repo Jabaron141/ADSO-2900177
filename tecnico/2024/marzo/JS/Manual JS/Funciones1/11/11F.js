@@ -13,14 +13,14 @@ function may(pnum1, pnum2, pnum3) {
     }
     else{
         if (parseFloat(num1)>parseFloat(num2) && parseFloat(num1)>parseFloat(num3)) {
-            console.log("el número "+num1+" es el mayor de los 3 números");
+            return num1;
         }
         else{
             if (parseFloat(num2)>parseFloat(num1) && parseFloat(num2)>parseFloat(num3)) {
-                console.log("el número "+num2+" es el mayor de los 3 números");
+                return num2;
             }
             else{
-                console.log("el número "+num3+" es el mayor de los 3 números");
+                return num3;
             }
         }
     }

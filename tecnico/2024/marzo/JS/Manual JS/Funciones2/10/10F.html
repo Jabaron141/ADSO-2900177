@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="c:\Users\natal\OneDrive\Escritorio\ADSO-2900177\tecnico\2024\marzo\JS\Manual JS\Funciones\10\10F.js"></script>
+    <script src="c:\Users\SENA\Desktop\ADSO-2900177\tecnico\2024\marzo\JS\Manual JS\Funciones2\10\10F.js"></script>
 </head>
 <body>
     <script>
         let fecNa = parseInt(prompt("Digite su año de nacimiento"));
 
-        ed(fecNa);
+        if (ed(fecNa)>17){
+            console.log("Usted tiene " + ed(fecNa) + " años y es mayor de edad");
+        }
+        else{
+            console.log("Usted tiene " + ed(fecNa) + " años y es menor de edad");
+        }
     </script>
 </body>
 </html>

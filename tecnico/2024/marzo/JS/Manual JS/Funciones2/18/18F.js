@@ -8,12 +8,11 @@ const mult = function(pnum){
     let num = pnum;
     let con = 0;
     let res = 0;
-    let re;
-
-    while (con<5) {
-        con = parseInt(con) + 1;
-        res = parseFloat(num)*parseFloat(con);
-        console.log(num+" x "+con+" = "+res);
+    let multi = "";
+    while (con < 10) {
+        con = con + 1;
+        res = num * con;
+        multi += num+" x "+con+" = "+res+"\n";
     }
-    return re;
+    return multi;
 }

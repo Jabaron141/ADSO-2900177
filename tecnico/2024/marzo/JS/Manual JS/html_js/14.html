@@ -21,10 +21,14 @@
         if (sue<(2*salMin)) {
             subTra = subTra+114000;
             console.log("El valor del subsidio de transporte que se le agrega es de " + subTra + "$\n");
+        }else{
+            subTra = 0;
         }
         if (sue>(4*salMin)) {
             ret = sue*0.04;
             console.log("El descuento por retención es " + ret + "$\n");
+        }else{
+            ret = 0;
         }
         let des = parseFloat(sal) + parseFloat(pen) + parseFloat(arl) + parseFloat(ret);
         let tot = parseFloat(sue) + parseFloat(subTra) - parseFloat(des);

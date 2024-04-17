@@ -12,7 +12,7 @@ function suma(pnumUno,pnumDos){
     numUno = pnumUno;
     numDos = pnumDos;
     sumar = numUno + numDos;
-    return sumar
+    return sumar;
 }
 
 function rest(pnumUno,pnumDos){
@@ -20,7 +20,7 @@ function rest(pnumUno,pnumDos){
     numUno = pnumUno;
     numDos = pnumDos;
     restar = numUno - numDos;
-    return restar
+    return restar;
 }
 
 function mult(pnumUno,pnumDos){
@@ -28,7 +28,7 @@ function mult(pnumUno,pnumDos){
     numUno = pnumUno;
     numDos = pnumDos;
     multiplicar = numUno * numDos;
-    return multiplicar
+    return multiplicar;
 }
 
 function div(pnumUno,pnumDos){
@@ -36,11 +36,11 @@ function div(pnumUno,pnumDos){
     numUno = pnumUno;
     numDos = pnumDos;
     dividir = numUno / numDos;
-    return dividir
+    return dividir;
 }
 
 function ope(pope,pnumUno,pnumDos){
-    let ope = pope
+    let ope = pope;
     numUno = pnumUno;
     numDos = pnumDos;
     if(ope=="suma"){

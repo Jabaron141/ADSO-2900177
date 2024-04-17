@@ -5,8 +5,8 @@
 */
 
 function por(ppor) {
-    let por = ppor;
+    let porc = ppor;
     let rpor;
-    rpor = por / 100;
+    rpor = porc / 100;
     return rpor;
 }

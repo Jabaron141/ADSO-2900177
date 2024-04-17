@@ -57,6 +57,8 @@ function subTra(psue){
     let subTran = 0;
     if(sue<(2*1300000)){
         subTran = 114000;
+    }else{
+        subTran = 0;
     }
     return subTran;
 }
@@ -66,6 +68,8 @@ function rete(psue){
     let ret = 0;
     if(sue>(4*1300000)){
         ret = sue*0.04;
+    }else{
+        ret = 0;
     }
     return ret;
 }

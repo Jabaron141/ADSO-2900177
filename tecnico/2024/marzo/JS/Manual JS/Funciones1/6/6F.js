@@ -18,5 +18,5 @@ function suma(pnumUno, pnumDos, pnumTre) {
     let numTre = pnumTre;
     let sumar;
     sumar = numUno + numDos + numTre;
-    return sumar
+    return sumar;
 }

@@ -6,18 +6,15 @@
 
 const mult = function(pnum){
     let num = pnum;
-    let res = 0;
-    let re;
-
-    for (let con = 1; con <= 10; con++) {
-        res = parseFloat(num)*parseInt(con);
-        console.log(num+" x "+con+" = "+res);
-        if (res % 2 == 0) {
-            console.log("el resultado es par");
-        }
-        else{
-            console.log("el resultado es impar");
+    let res = 1;
+    let multi = "";
+    for(let con = 1; con <= 5; con++){
+        multi = num * con;
+        if (multi %2 == 0){
+            multi += res+" es par\n";
+        }else{
+            multi += res+" es impar\n";
         }
     }
-    return re;
+    return multi;
 }

@@ -4,34 +4,72 @@
  * Fecha: Lunes 01 de abril de 2024
 */
 
-const to = function(pvalDia, pdiaTra){
+const sue = function(pvalDia, pdiaTra) {
     let valDia = pvalDia;
     let diaTra = pdiaTra;
-    let sue = parseFloat(valDia) * parseFloat(diaTra);
-    let sal = parseFloat(sue) * 0.12;
-    let pen = parseFloat(sue) * 0.16;
-    let arl = parseFloat(sue) * 0.052;
-    let salMin = 1300000;
+    let suel;
+    suel = valDia * diaTra;
+    return suel;
+}
+
+const sal = function(psue) {
+    let sue = psue;
+    let salu;
+    salu = sue * 0.12;
+    return salu;
+}
+
+const pen = function(psue) {
+    let sue = psue;
+    let pens;
+    pens = sue * 0.16;
+    return pens;
+}
+
+const arl = function(psue) {
+    let sue = psue;
+    let arL;
+    arL = sue * 0.052;
+    return arL;
+}
+
+const des = function(psal, ppen, parl, pret) {
+    let sal = psal;
+    let pen = ppen;
+    let arl = parl;
+    let ret = pret;
+    let desc;
+    desc = sal + pen + arl + ret;
+    return desc;
+}
+
+const tot = function(psue, pdes, psubTrans) {
+    let sue = psue;
+    let des = pdes;
+    let subTrans = psubTrans;
+    let to;
+    to = sue - des + subTrans;
+    return to;
+}
+
+const subTra = function(psue){
+    let sue= psue;
+    let subTran = 0;
+    if(sue<(2*1300000)){
+        subTran = 114000;
+    }else{
+        subTran = 0;
+    }
+    return subTran;
+}
+
+const rete = function(psue){
+    let sue = psue;
     let ret = 0;
-    let subTra = 0;
-    let res;
-
-    if (sue<(2*salMin)) {
-        subTra = subTra+114000;
-        console.log("El valor del subsidio de transporte que se le agrega es de " + subTra + "$\n");
-    }
-    if (sue>(4*salMin)) {
+    if(sue>(4*1300000)){
         ret = sue*0.04;
-        console.log("El descuento por retención es " + ret + "$\n");
+    }else{
+        ret = 0;
     }
-    let des = parseFloat(sal) + parseFloat(pen) + parseFloat(arl) + parseFloat(ret);
-    let tot = parseFloat(sue) + parseFloat(subTra) - parseFloat(des);
-
-    console.log("El descuento de salud es " + sal + "$\n");
-    console.log("El descuento de pension es " + pen + "$\n");
-    console.log("El descuento de la arl es " + arl + "$\n");
-    console.log("El sueldo sin descuento es de " + sue + "$\n");
-    console.log("El sueldo total es de " + tot + "$\n");
-
-    return res; 
+    return ret;
 }

@@ -6,9 +6,9 @@
 
 const cont = function(pnum){
     let num = pnum;
-    let res;
-    for (let con = 1; con <= num; con++) {
-        console.log(con);
+    let res = "";
+    for(let con = 1; con <= num; con++){
+        res += con+"\n";
     }
     return res;
 }

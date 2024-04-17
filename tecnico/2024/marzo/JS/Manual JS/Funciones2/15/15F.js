@@ -4,36 +4,39 @@
  * Fecha: Lunes 01 de abril de 2024
 */
 
-const not = function(pnot1, pnot2, pnot3){
-    let not1 = pnot1;
-    let not2 = pnot2;
-    let not3 = pnot3;
-    let por1 = parseFloat(not1) * 0.3;
-    let por2 = parseFloat(not2) * 0.3;
-    let por3 = parseFloat(not3) * 0.4;
-    let suma = parseFloat(por1) + parseFloat(por2) + parseFloat(por3);
-    let res;
+const pornot = function(pnot, pporc) {
+    let not = pnot;
+    let porce = pporc;
+    let rnot;
+    rnot = not * porce;
+    return rnot;
+}
 
-    console.log("El la primer nota (" + not1 + ") con su respectivo porcentaje es " + por1 + "\n");
-    console.log("El la segunda nota (" + not2 + ") con su respectivo porcentaje es " + por2 + "\n");
-    console.log("El la tercer nota (" + not3 + ") con su respectivo porcentaje es " + por3 + "\n");
-    console.log("Su nota final es de " + suma + "\n");
+const suma = function(pnumUno, pnumDos, pnumTre) {
+    let numUno = pnumUno;
+    let numDos = pnumDos;
+    let numTre = pnumTre;
+    let sumar;
+    sumar = numUno + numDos + numTre;
+    return sumar;
+}
+
+const may = function(psuma){
+    let suma = psuma;
     if (suma>4.5) {
-        console.log("Su nota es superior");
+        return "Su nota final es superior";
     }
     else{
         if (suma<=4.5 && suma>3.5) {
-            console.log("Su nota es buena");
+            return "Su nota final es buena";
         }
         else{
             if (suma<=3.5 && suma>3) {
-                console.log("Su nota es media");
+                return "Su nota final es media";
             }
             else{
-                console.log("Su nota es mala");
+                return "Su nota final es mala";
             }
         }
     }
-
-    return res; 
 }

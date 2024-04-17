@@ -12,31 +12,35 @@ const suma = function(pnumUno,pnumDos){
     numUno = pnumUno;
     numDos = pnumDos;
     sumar = numUno + numDos;
-    return sumar
+    return sumar;
 }
+
 const rest = function(pnumUno,pnumDos){
     let restar;
     numUno = pnumUno;
     numDos = pnumDos;
     restar = numUno - numDos;
-    return restar
+    return restar;
 }
+
 const mult = function(pnumUno,pnumDos){
     let multiplicar;
     numUno = pnumUno;
     numDos = pnumDos;
     multiplicar = numUno * numDos;
-    return multiplicar
+    return multiplicar;
 }
+
 const div = function(pnumUno,pnumDos){
     let dividir;
     numUno = pnumUno;
     numDos = pnumDos;
     dividir = numUno / numDos;
-    return dividir
+    return dividir;
 }
+
 const ope = function(pope,pnumUno,pnumDos){
-    let ope = pope
+    let ope = pope;
     numUno = pnumUno;
     numDos = pnumDos;
     if(ope=="suma"){

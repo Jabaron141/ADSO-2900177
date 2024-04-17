@@ -7,12 +7,10 @@
 const cont = function(pnum){
     let num = pnum;
     let con = 0;
-    let res;
-
-    while (con<num) {
-        con = parseInt(con) + 1;
-        console.log(con);
+    let res = "";
+    while(con<num){
+        con = con+1;
+        res += con+"\n";
     }
-
     return res;
 }

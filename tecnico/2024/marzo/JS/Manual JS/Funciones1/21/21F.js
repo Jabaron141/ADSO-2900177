@@ -7,10 +7,8 @@
 function fact(pnum){
     let num = pnum;
     let fac = 1;
-
     for (let con = 1; con <= num; con++) {
         fac = parseFloat(fac)*parseFloat(con);
     }
-    
     return fac;
 }

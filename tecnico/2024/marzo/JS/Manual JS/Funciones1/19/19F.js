@@ -9,7 +9,6 @@ function mult(pnum){
     let con = 0;
     let res = 0;
     let multi = "";
-
     while (con < 5) {
         con = con + 1;
         multi = num * con;

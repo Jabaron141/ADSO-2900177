@@ -4,48 +4,43 @@
  * Fecha: Lunes 01 de abril de 2024
 */
 
-const sue = function(pvalDia, pdiaTra) {
+const suel = function(pvalDia, pdiaTra) {
     let valDia = pvalDia;
     let diaTra = pdiaTra;
-    let suel;
-    suel = valDia * diaTra;
-    return suel;
+    let su = diaTra * valDia;
+    return   su;
 }
 
-const sal = function(psue) {
-    let sue = psue;
-    let salu;
-    salu = sue * 0.12;
-    return salu;
+
+const salu = function(pvalDia, pdiaTra) {
+    let sa = suel(pvalDia, pdiaTra) * 0.12;
+    return sa;
 }
 
-const pen = function(psue) {
-    let sue = psue;
-    let pens;
-    pens = sue * 0.16;
-    return pens;
+const pens = function(pvalDia, pdiaTra) {
+    let pe = suel(pvalDia, pdiaTra) * 0.16;
+    return pe;
 }
 
-const arl = function(psue) {
-    let sue = psue;
-    let arL;
-    arL = sue * 0.052;
-    return arL;
+const Arl = function(pvalDia, pdiaTra) {
+    let ar = suel(pvalDia, pdiaTra) * 0.052;
+    return ar;
 }
 
-const des = function(psal, ppen, parl) {
-    let sal = psal;
-    let pen = ppen;
-    let arl = parl;
-    let desc;
-    desc = sal + pen + arl;
-    return desc;
+
+const desc = function(pvalDia, pdiaTra){
+    let salud = salu(pvalDia, pdiaTra);
+    let pension = pens(pvalDia, pdiaTra);
+    let arl = Arl(pvalDia, pdiaTra);
+    let de;
+    de = salud + pension + arl;
+    return de;
 }
 
-const tot = function(psue, pdes) {
-    let sue = psue;
-    let des = pdes;
-    let to;
-    to = sue - des;
-    return to;
+const to = function(pvalDia, pdiaTra){
+    let sueldo  = suel(pvalDia, pdiaTra);
+    let descuento = desc(pvalDia, pdiaTra);
+    let total;
+    total = sueldo - descuento;
+    return total;
 }

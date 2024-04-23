@@ -4,72 +4,63 @@
  * Fecha: Lunes 01 de abril de 2024
 */
 
-function sue(pvalDia, pdiaTra) {
+function suel(pvalDia, pdiaTra) {
     let valDia = pvalDia;
     let diaTra = pdiaTra;
-    let suel;
-    suel = valDia * diaTra;
-    return suel;
+    let su = diaTra * valDia;
+    return   su;
 }
 
-function sal(psue) {
-    let sue = psue;
-    let salu;
-    salu = sue * 0.12;
-    return salu;
+function salu(pvalDia, pdiaTra) {
+    let sa = suel(pvalDia, pdiaTra) * 0.12;
+    return sa;
 }
 
-function pen(psue) {
-    let sue = psue;
-    let pens;
-    pens = sue * 0.16;
-    return pens;
+function pens(pvalDia, pdiaTra) {
+    let pe = suel(pvalDia, pdiaTra) * 0.16;
+    return pe;
 }
 
-function arl(psue) {
-    let sue = psue;
-    let arL;
-    arL = sue * 0.052;
-    return arL;
+function Arl(pvalDia, pdiaTra) {
+    let ar = suel(pvalDia, pdiaTra) * 0.052;
+    return ar;
 }
 
-function des(psal, ppen, parl, pret) {
-    let sal = psal;
-    let pen = ppen;
-    let arl = parl;
-    let ret = pret;
-    let desc;
-    desc = sal + pen + arl + ret;
-    return desc;
+function desc(pvalDia, pdiaTra){
+    let salud = salu(pvalDia, pdiaTra);
+    let pension = pens(pvalDia, pdiaTra);
+    let arl = Arl(pvalDia, pdiaTra);
+    let de;
+    de = salud + pension + arl;
+    return de;
 }
 
-function tot(psue, pdes, psubTrans) {
-    let sue = psue;
-    let des = pdes;
-    let subTrans = psubTrans;
-    let to;
-    to = sue - des + subTrans;
-    return to;
-}
-
-function subTra(psue){
-    let sue= psue;
-    let subTran = 0;
-    if(sue<(2*1300000)){
-        subTran = 114000;
+function subTrans(pvalDia, pdiaTra){
+    let subTra = 0;
+    if(suel(pvalDia, pdiaTra) < (2*1300000)){
+        subTra = subTra + 114000;
     }else{
-        subTran = 0;
+        subTra = subTra + 0;
     }
-    return subTran;
+    return subTra;
 }
 
-function rete(psue){
-    let sue = psue;
-    let ret = 0;
-    if(sue>(4*1300000)){
-        ret = sue*0.04;
+function rete(pvalDia, pdiaTra){
+    let reten = 0;
+    if(suel(pvalDia, pdiaTra)>(4*1300000)){
+        reten = suel(pvalDia, pdiaTra) * 0.04;
     }else{
-        ret = 0;
+        reten = reten + 0;
     }
-    return ret;
+    return reten;
+}
+
+function to(pvalDia, pdiaTra){
+    let sueldo = suel(pvalDia, pdiaTra);
+    let subTransporte = subTrans(pvalDia, pdiaTra);
+    let descuento = desc(pvalDia, pdiaTra);
+    let retencion = rete(pvalDia, pdiaTra);
+    let total;
+    total = (sueldo + subTransporte) - (descuento + retencion);
+    return total;
 }

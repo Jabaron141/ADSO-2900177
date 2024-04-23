@@ -3,18 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="c:\Users\SENA\Desktop\ADSO-2900177\tecnico\2024\marzo\JS\Manual JS\Funciones2\8\8F.js"></script>
+    <script src="8F.js"></script>
 </head>
 <body>
     <script>
         let valDia = parseFloat(prompt("Digite el valor del dia"));
         let diaTra = parseFloat(prompt("Digite la cantidad de dias trabajados"));
 
-        console.log("El descuento de salud es " + sal(sue(valDia,diaTra)) + "$");
-        console.log("El descuento de pension es " + pen(sue(valDia,diaTra)) + "$");
-        console.log("El descuento de la arl es " + arl(sue(valDia,diaTra)) + "$");
-        console.log("El sueldo sin descuento es de " + sue(valDia,diaTra) + "$");
-        console.log("El sueldo total es de " + tot(sue(valDia,diaTra),des(sal(sue(valDia,diaTra)),pen(sue(valDia,diaTra)),arl(sue(valDia,diaTra)))) + "$");
+        let sue = suel(valDia, diaTra);
+        console.log("Su sueldo es de "+sue+"$"); 
+
+        let sal = salu(valDia, diaTra);
+        console.log("El descuento por salud es de "+sal+"$");
+
+        let pen  = pens(valDia, diaTra);
+        console.log("El descuento por pension es de "+pen+"$");
+
+        let arl = Arl(valDia, diaTra);
+        console.log("El descuento por ARL es de "+arl+"$");
+
+        let des = desc(valDia, diaTra);
+        console.log("El descuento total es "+des+"$");
+
+        let  tot = to(valDia, diaTra);
+        console.log("El pago total es "+tot+"$");
     </script>
 </body>
 </html>

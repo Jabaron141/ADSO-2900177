@@ -1,9 +1,3 @@
-/**
- * primer ejercicio del arreglo unidimensionsal
- * Autor: Javier Ricardo Tovar T.
- * 08- mayo - de 2024
- */
-
 let arreglo = [];
 let numeroDatos;
 let iteracion;

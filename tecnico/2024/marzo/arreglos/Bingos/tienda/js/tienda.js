@@ -1,9 +1,3 @@
-/**
- * Crear una tienda en JS usando arreglos de Nombre: Valor
- * autor: Javier Ricardo Tovar Tovar.
- * 4 de mayo de 2024
- */
-
 let tienda = [];
 let iteracion = [];
 let sumar = 0;

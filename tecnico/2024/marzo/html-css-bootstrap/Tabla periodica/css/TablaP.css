@@ -12,11 +12,9 @@
     margin-top: 50px;
     margin-bottom: 20px;
 }
-
-.fondo-azul-oscuro{
-    background-color: #0f065f;
+.sinLetra{
+    color: #969696;
 }
-
 .numero{
     font-size: 10px;
     text-align: left;
@@ -34,7 +32,7 @@
 .nombre{
     text-align: left;
     font-size: 10px;
-    margin-left: -3px;
+    margin-left: -8px;
     margin-top: -4px;
     margin-bottom: 4px;
 }
@@ -62,4 +60,10 @@
 }
 .azul{
     background-color: rgb(97, 171, 255);
+}
+.verdeClaro{
+    background-color: rgb(179, 255, 116);
+}
+.verde{
+    background-color: rgb(115, 255, 115);
 }

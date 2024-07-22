@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="12F.js"></script>
+</head>
+<body>
+    <script>
+        let l1 = parseInt(prompt("Digite el valor del lado del primer cuadrado"));
+        let l2 = parseFloat(prompt("Digite el valor del lado del segundo cuadrado"));
+        let l3 = parseFloat(prompt("Digite el valor del lado del tercer cuadrado"));
+
+        console.log("el primer cuadrado tiene un lado de "+l1+" unidades y un area de "+are(l1));
+        console.log("el segundo cuadrado tiene un lado de "+l2+" unidades y un area de "+are(l2));
+        console.log("el tercer cuadrado tiene un lado de "+l3+" unidades y un area de "+are(l3));
+        console.log("el cuadrado con un lado de "+may(l1,l2,l3)+" unidades y un area de "+may(are(l1),are(l2),are(l3))+" es el de mayor area de los 3 cuadrados");
+    </script>
+</body>
+</html>

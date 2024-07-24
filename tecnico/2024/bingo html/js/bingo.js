@@ -95,19 +95,16 @@ document.addEventListener('DOMContentLoaded', function(){
     for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
         printResultado += '<tr>';
         for (iteracion2 = 0; iteracion2 < 5; iteracion2++) {
-            //X1
 
             if (iteracion1 <= 3 && iteracion2 >= 1 && iteracion2 <= 4 && iteracion1 % 2 == 0 && iteracion2 % 2 == 1) {
                 printResultado += '<td class="color-1 borde">' + bingo[iteracion1][iteracion2] + '</td>';
             } else if (iteracion1 <= 2 && iteracion2 >= 1 && iteracion2 <= 2 && iteracion1 % 2 == 1 && iteracion2 % 2 == 0) {
                 printResultado += '<td class="color-1 borde">' + bingo[iteracion1][iteracion2] + '</td>';
-                //X2
 
             } else if (iteracion1>=2&&iteracion2<=3&&iteracion1%2==0&&iteracion2%2==0){
                 printResultado += '<td class="color-2 borde">' + bingo[iteracion1][iteracion2] + '</td>';
             }else if (iteracion1>=2&&iteracion2<=2&&iteracion1%2==1&&iteracion2%2==1){
                 printResultado += '<td class="color-2 borde">' + bingo[iteracion1][iteracion2] + '</td>';
-                //X3
 
             }else if (iteracion1>=2&&iteracion2>=2&&iteracion1%2==0&&iteracion2%2==0){
                 printResultado += '<td class="color-3 borde">' + bingo[iteracion1][iteracion2] + '</td>';

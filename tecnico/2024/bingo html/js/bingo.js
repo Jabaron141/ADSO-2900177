@@ -5,118 +5,55 @@
  */
 
 document.addEventListener('DOMContentLoaded', function(){
-    let bingo =[];
-    let interno = [];
-    let iteracion1;
-    let iteracion2;
-    let contador = 0;
-    let tabla;
-    let printResultado = '';
+    let bingo = [];
     let letras = ['B', 'I', 'N', 'G', 'O'];
-    
+    let printResultado = '';
 
-    console.log("\nBingo");
-    for(iteracion1=0;iteracion1<5;iteracion1++){
-        interno=[];
-        for(iteracion2=0;iteracion2<5;iteracion2++){
-            contador=contador+1;
-            tabla=contador*3;
-            interno.push(tabla);
+    for(let i = 0; i < 5; i++) {
+        let interno = [];
+        for(let j = 0; j < 5; j++) {
+            interno.push((i * 5 + j + 1) * 3);
         }
         bingo.push(interno);
     }
-    console.log(bingo);
 
-    printResultado+='<table class="table"><tr>';
-    for (let contadorB = 0; contadorB < letras.length; contadorB++) {
-        printResultado+= '<th class = "borde color-letra">' + letras[contadorB] + '</th>';
-    };
-    printResultado+='</tr>';
-    for(iteracion1 = 0; iteracion1 < 5; iteracion1++) {
-        printResultado+='<tr>'
-        for(iteracion2 = 0; iteracion2 < 5; iteracion2++) {
-            printResultado+='<td class="borde">'+bingo[iteracion1][iteracion2]+'</td>';
+    function crearTabla(condiciones) {
+        let tabla = '<table class="table"><tr>';
+        for (let letra of letras) {
+            tabla += '<th class="borde color-letra">' + letra + '</th>';
         }
-      printResultado+='</tr>';
-    }
-    printResultado+='</table>';
-
-    
-    for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
-    printResultado += '<table class="table">';
-    printResultado += '<tr>';
-
-        for (let contadorB = 0; contadorB < letras.length; contadorB++) {
-            printResultado += '<th class ="borde color-letra">' + letras[contadorB] + '</th>';
-        };
-        printResultado += '</tr>';
-            for (let contador = 0; contador < 5; contador++) {
-                printResultado += '<tr>';
-                    for (iteracion2 = 0; iteracion2 < 5; iteracion2++) {
-                        if (iteracion2 == iteracion1) {
-                            printResultado += '<td class ="borde color-1"><strong>' + bingo[contador][iteracion2] + '</strong></td>';
-                        } else {
-                            printResultado += '<td class ="borde">' + bingo[contador][iteracion2] + '</td>';
-                        };
-                    };
-                printResultado += '</tr>';
-            };
-
-    printResultado += '</table>';
-    };
-
-
-
-    printResultado+='<table class="table"><tr>';
-    for (let contadorB = 0; contadorB < letras.length; contadorB++) {
-        printResultado+= '<th class = "borde color-letra">' + letras[contadorB] + '</th>';
-    };
-    printResultado+='</tr>';
-    for(iteracion1 = 0; iteracion1 < 5; iteracion1++) {
-      printResultado+='<tr>'
-      for(iteracion2 = 0; iteracion2 < 5; iteracion2++) {
-          if(iteracion1 == iteracion2 || iteracion1 + iteracion2 == 4) {
-             printResultado+='<td class="borde color-1">'+bingo[iteracion1][iteracion2]+'</td>';
-          }else{
-              printResultado+='<td class="borde">'+bingo[iteracion1][iteracion2]+'</td>';
-          }
-      }
-      printResultado+='</tr>';
-    }
-    printResultado+='</table>';
-
-
-
-    printResultado += '<table class="table"><tr>';
-    for (let contadorB = 0; contadorB < letras.length; contadorB++) {
-        printResultado += '<th class = "borde color-letra">' + letras[contadorB] + '</th>';
-    }
-    printResultado += '</tr>';
-    for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
-        printResultado += '<tr>';
-        for (iteracion2 = 0; iteracion2 < 5; iteracion2++) {
-
-            if (iteracion1 <= 3 && iteracion2 >= 1 && iteracion2 <= 4 && iteracion1 % 2 == 0 && iteracion2 % 2 == 1) {
-                printResultado += '<td class="color-1 borde">' + bingo[iteracion1][iteracion2] + '</td>';
-            } else if (iteracion1 <= 2 && iteracion2 >= 1 && iteracion2 <= 2 && iteracion1 % 2 == 1 && iteracion2 % 2 == 0) {
-                printResultado += '<td class="color-1 borde">' + bingo[iteracion1][iteracion2] + '</td>';
-
-            } else if (iteracion1>=2&&iteracion2<=3&&iteracion1%2==0&&iteracion2%2==0){
-                printResultado += '<td class="color-2 borde">' + bingo[iteracion1][iteracion2] + '</td>';
-            }else if (iteracion1>=2&&iteracion2<=2&&iteracion1%2==1&&iteracion2%2==1){
-                printResultado += '<td class="color-2 borde">' + bingo[iteracion1][iteracion2] + '</td>';
-
-            }else if (iteracion1>=2&&iteracion2>=2&&iteracion1%2==0&&iteracion2%2==0){
-                printResultado += '<td class="color-3 borde">' + bingo[iteracion1][iteracion2] + '</td>';
-            }else if (iteracion1>=2&&iteracion2>=2&&iteracion1%2==1&&iteracion2%2==1){
-                printResultado += '<td class="color-3 borde">' + bingo[iteracion1][iteracion2] + '</td>';
-            }else{
-                printResultado += '<td class="borde">' + bingo[iteracion1][iteracion2] + '</td>';
+        tabla += '</tr>';
+        for(let i = 0; i < 5; i++) {
+            tabla += '<tr>';
+            for(let j = 0; j < 5; j++) {
+                let claseExtra = '';
+                if (condiciones(i, j)) {
+                    claseExtra = ' color-1';
+                }
+                tabla += '<td class="borde' + claseExtra + '">' + bingo[i][j] + '</td>';
             }
+            tabla += '</tr>';
         }
-        printResultado += '</tr>';
+        tabla += '</table>';
+        return tabla;
     }
-    printResultado += '</table>';
-    
+
+    printResultado += crearTabla(() => false);
+
+    for (let i = 0; i < 5; i++) {
+        printResultado += crearTabla((x, y) => x === i && x === y);
+    }
+
+    printResultado += crearTabla((x, y) => x === y || x + y === 4);
+
+    printResultado += crearTabla((x, y) => 
+        (x <= 3 && y >= 1 && y <= 4 && x % 2 === 0 && y % 2 === 1) ||
+        (x <= 2 && y >= 1 && y <= 2 && x % 2 === 1 && y % 2 === 0) ||
+        (x >= 2 && y <= 3 && x % 2 === 0 && y % 2 === 0) ||
+        (x >= 2 && y <= 2 && x % 2 === 1 && y % 2 === 1) ||
+        (x >= 2 && y >= 2 && x % 2 === 0 && y % 2 === 0) ||
+        (x >= 2 && y >= 2 && x % 2 === 1 && y % 2 === 1)
+    );
+
     document.getElementById('bingo-1').innerHTML = printResultado;
 });

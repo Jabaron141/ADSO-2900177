@@ -1,0 +1,35 @@
+
+body{
+    text-align: center;
+
+}
+
+form{
+    margin: auto;
+    /* background: #681; */
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+form input{
+    margin: 2%;
+    border: none;
+    background: #4441;
+    animation: quitar 10s ease infinite;
+}
+form [type="submit"]{
+    width: 5vw;
+    margin: auto;
+}
+
+@keyframes quitar{
+    to{
+        border-bottom: none;
+    
+    }
+    from{
+        border-bottom: 1px solid green;
+
+    }
+
+}
